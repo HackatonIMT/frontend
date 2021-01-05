@@ -15,7 +15,7 @@ export class AppComponent {
   user = '';
 
   constructor(private http: HttpClient) {
-    this.makeRequest();
+    // this.makeRequest();
   }
 
   makeRequest() {
@@ -23,5 +23,9 @@ export class AppComponent {
       console.log(data);
       this.user = data.full_name;
     });
+  }
+
+  eraseName() {
+    this.user = '';
   }
 }
