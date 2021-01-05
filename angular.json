@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "frontend-hackaton"
+  "defaultProject": "frontend-hackaton",
+  "cli": {
+    "analytics": false
+  }
 }

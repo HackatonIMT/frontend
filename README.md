@@ -1,7 +1,14 @@
-# FrontendHackaton
+# Frontend Hackaton
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
+## Prerequisites
+
+- Node.js: Angular requires a [current, active LTS, or maintenance LTS](https://nodejs.org/about/releases) version of Node.js.
+- npm package manager: Angular, the Angular CLI, and Angular applications depend on npm packages for many features and functions. To check that you have the npm client installed, run npm -v in a terminal window. To install it, go [here](https://docs.npmjs.com/cli/install).
+- Angular CLI: necessary for development. It can be installed with the command `npm install -g @angular/cli`.
+
+Source and more info: [Angular Setup Guide](https://angular.io/guide/setup-local)
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
