@@ -1,5 +1,10 @@
 # Frontend Hackaton
 
+Cette application permet d'afficher un message de salutation avec le nom d'un utilisateur récupéré depuis la liste d'utilisateurs enregistré sur le serveur. 
+Le bouton "click" affiche le message et le bouton "delete name" efface le nom de l'utilisateur.
+
+On peut aussi obtenir les données météo d'une ville entrée en paramètre 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
 ## Prerequisites
