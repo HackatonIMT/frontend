@@ -1,0 +1,10 @@
+<input style="margin-right: 10px" placeholder="Insert a french city name" [(ngModel)]="city" />
+<button (click)="getWeather()" style="margin-right: 10px">weather</button>
+
+<div *ngIf="weatherData">
+  <p><b><u>Description:</u></b> {{weatherData.description}}</p>
+  <p><b><u>Max Temperature:</u></b> {{weatherData.tempMax.toFixed(2)}} ºC</p>
+  <p><b><u>Min Temperature:</u></b> {{weatherData.tempMin.toFixed(2)}} ºC</p>
+</div>
+
+<p *ngIf="error" style="color: red"><b>City not found</b></p>
