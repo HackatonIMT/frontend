@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { ServerService } from './server.service';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class WeatherService {
-  owmToken = '7ac81822e863f0b2033133915cd8ad53';
-  owmUrl = 'http://api.openweathermap.org/data/2.5/';
+  private url = 'weather';
 
-  constructor(private http: HttpClient) { }
+  constructor(private serverService: ServerService) { }
 
-  getWeather(city: string) {
-    return this.http.get(`${this.owmUrl}weather/?q=${city}&lang=fr&APPID=${this.owmToken}`);
+  getWeather = (city: string) => {
+    const data = { city };
+    return this.serverService.post(this.url, data);
   }
 }

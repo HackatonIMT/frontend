@@ -25,11 +25,7 @@ export class WeatherComponent implements OnInit {
   getWeather = () => {
     this.weatherService.getWeather(this.city).subscribe((data: any) => {
       this.error = false;
-      this.weatherData = {
-        description: data.weather[0].description,
-        tempMin: data.main.temp_min - 273.15,
-        tempMax: data.main.temp_max - 273.15
-      };
+      this.weatherData = data;
     }, error => {
       this.weatherData = null;
       this.error = true;
