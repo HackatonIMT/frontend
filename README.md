@@ -50,6 +50,6 @@ sudo docker build -t angular .
 * Excecuter le conteneur
 
 ```terminal
-sudo docker run -it -p 8080:80 angular
+sudo docker run -ti --init -p 8080:80 -e PORT=80 angular
 ```
 
