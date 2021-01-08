@@ -37,3 +37,19 @@ Exécutez `ng e2e` pour exécuter les tests de bout en bout via [Protractor] (ht
 
 Pour obtenir plus d'aide sur l'interface de commande angulaire, utilisez la rubrique "Aide" ou consultez la page [Angular CLI Overview and Command Reference] (https://angular.io/cli).
 
+our obtenir plus d'aide sur l'interface de commande Angular, utilisez la rubrique "Aide" ou consultez la page [Angular CLI Overview and Command Reference] (https://angular.io/cli).
+
+## Exécution avec Docker
+
+* Construire le projet
+
+```terminal
+sudo docker build -t angular .
+```
+
+* Excecuter le conteneur
+
+```terminal
+sudo docker run -it -p 8080:80 angular
+```
+
