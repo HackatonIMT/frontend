@@ -41,10 +41,16 @@ our obtenir plus d'aide sur l'interface de commande Angular, utilisez la rubriqu
 
 ## Exécution avec Docker
 
-* Construire le projet
+* Construire le projet pour développement
 
 ```terminal
-sudo docker build -t angular .
+sudo docker build -t angular . --build-arg ENV=dev
+```
+
+* Construire le projet pour production
+
+```terminal
+sudo docker build -t angular . --build-arg ENV=production
 ```
 
 * Excecuter le conteneur
