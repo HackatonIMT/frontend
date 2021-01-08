@@ -7,7 +7,7 @@ import { throwError } from 'rxjs';
   providedIn: 'root'
 })
 export class ServerService {
-  private baseUrl = 'http://localhost:5000/'; // TODO: Obtain it from the environment
+  private baseUrl = 'https://hackathon-app.osc-fr1.scalingo.io/'; // TODO: Obtain it from the environment
 
   constructor(private http: HttpClient) { }
 
