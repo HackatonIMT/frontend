@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 import { catchError } from 'rxjs/operators';
 import { throwError } from 'rxjs';
 
@@ -7,7 +8,7 @@ import { throwError } from 'rxjs';
   providedIn: 'root'
 })
 export class ServerService {
-  private baseUrl = 'https://hackathon-app.osc-fr1.scalingo.io/'; // TODO: Obtain it from the environment
+  private baseUrl =  environment.baseUrl; // TODO: Obtain it from the environment
 
   constructor(private http: HttpClient) { }
 
