@@ -5,35 +5,35 @@ Le bouton "click" affiche le message et le bouton "delete name" efface le nom de
 
 On peut aussi obtenir les données météo d'une ville entrée en paramètre 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
-## Prerequisites
+## Conditions préalables
 
-- Node.js: Angular requires a [current, active LTS, or maintenance LTS](https://nodejs.org/about/releases) version of Node.js.
-- npm package manager: Angular, the Angular CLI, and Angular applications depend on npm packages for many features and functions. To check that you have the npm client installed, run npm -v in a terminal window. To install it, go [here](https://docs.npmjs.com/cli/install).
-- Angular CLI: necessary for development. It can be installed with the command `npm install -g @angular/cli`.
+- Node.js : Angular nécessite une version [LTS actuelle, active ou de maintenance](https://nodejs.org/about/releases) de Node.js.
+- gestionnaire de paquets npm : Angular, la CLI Angular et les applications Angular dépendent des paquets npm pour de nombreuses caractéristiques et fonctions. Pour vérifier que vous avez installé le client npm, lancez npm -v dans une fenêtre de terminal. Pour l'installer, allez [ici](https://docs.npmjs.com/cli/install).
+- Angular CLI : nécessaire pour le développement. Elle peut être installée avec la commande `npm install -g @angular/cli`.
 
-Source and more info: [Angular Setup Guide](https://angular.io/guide/setup-local)
-## Development server
+Source et plus d'informations : [Guide d'installation angulaire](https://angular.io/guide/setup-local)
+## Serveur de développement
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Lancez `ng serve` pour un serveur de développement. Naviguez vers `http://localhost:4200/`. L'application se rechargera automatiquement si vous modifiez l'un des fichiers sources.
 
-## Code scaffolding
+## Génération de code
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Exécutez `ng generate component component-name` pour générer un nouveau composant. Vous pouvez également utiliser `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Exécutez "construire" pour construire le projet. Les artefacts de construction seront stockés dans le répertoire `dist/`. Utilisez le drapeau `--prod` pour un build de production.
 
-## Running unit tests
+## Exécution des tests unitaires
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Exécutez "ng test" pour exécuter les tests unitaires via [Karma] (https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Exécution des tests de bout en bout
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Exécutez `ng e2e` pour exécuter les tests de bout en bout via [Protractor] (http://www.protractortest.org/).
 
-## Further help
+## Aide complémentaire
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Pour obtenir plus d'aide sur l'interface de commande angulaire, utilisez la rubrique "Aide" ou consultez la page [Angular CLI Overview and Command Reference] (https://angular.io/cli).
+
