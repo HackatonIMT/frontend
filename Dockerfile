@@ -8,7 +8,7 @@ RUN npm run build
 
 ### STAGE 2: Run (with Python) ###
 FROM python:3.8.3
-COPY --from=build /usr/src/app/dist/frontend-hackaton /usr/src/app/dist/frontend-hackaton
+COPY --from=build /usr/src/app/dist/ /usr/src/app/dist/frontend-hackaton
 WORKDIR /usr/src/app/dist/frontend-hackaton
 CMD python -m http.server 80
 

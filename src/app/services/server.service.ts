@@ -20,22 +20,22 @@ export class ServerService {
     return this.http.post<T>(this.baseUrl + extension, data, this.getParams()).pipe(catchError(this.handleError));
   }
 
-  delete(extension) {
+  delete = (extension) => {
     return this.http.delete(this.baseUrl + extension, this.getParams()).pipe(catchError(this.handleError));
   }
 
-  put<T>(extension, data, params = null) {
+  put = <T>(extension, data, params = null) => {
     return this.http.put<T>(this.baseUrl + extension, data, this.getParams(params)).pipe(catchError(this.handleError));
   }
 
-  handleError(error: HttpErrorResponse) {
+  handleError = (error: HttpErrorResponse) => {
     return throwError(error.message || 'Error');
   }
 
-  private getParams(params = null) {
+  private getParams = (params = null) => {
     if (!params) {
       params = new HttpParams();
     }
-    return { params: params };
+    return { params };
   }
 }
