@@ -1,0 +1,20 @@
+<h1>{{intent.display_name}}</h1>
+<p>{{intent.priority}}</p>
+
+<h3>Messages</h3>
+<div>
+  <ul *ngFor="let message of intent.messages">
+    <li>
+      {{message}}
+    </li>
+  </ul>
+</div>
+
+<h3>Training Phrases</h3>
+<div>
+  <ul *ngFor="let phrase of intent.training_phrases">
+    <li>
+      {{phrase}}
+    </li>
+  </ul>
+</div>
